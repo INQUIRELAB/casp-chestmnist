@@ -1,0 +1,10 @@
+{
+  "searched_nonrec": {"params": 1896566, "mmac": 167.46, "lat_b1_ms": 1.6474, "lat_b256_ms": 5.2227},
+  "searched_rec": {"params": 1486766, "mmac": 292.95, "lat_b1_ms": 1.2314, "lat_b256_ms": 6.2264},
+  "searched_nonrec_pm": {"params": 1457897, "mmac": 128.55, "lat_b1_ms": 1.6691, "lat_b256_ms": 4.9282},
+  "resnet18": {"params": 11174862, "mmac": 456.77, "lat_b1_ms": 0.5598, "lat_b256_ms": 3.3097},
+  "resnet50": {"params": 23527886, "mmac": 1052.2, "lat_b1_ms": 1.3688, "lat_b256_ms": 12.6372},
+  "densenet121": {"params": 6959374, "mmac": 679.77, "lat_b1_ms": 3.4381, "lat_b256_ms": 19.1837},
+  "mobilenet_v2": {"params": 2241230, "mmac": 22.66, "lat_b1_ms": 1.1697, "lat_b256_ms": 4.5693},
+  "vit_small": {"params": 1795598, "mmac": 89.01, "lat_b1_ms": 0.4153, "lat_b256_ms": 2.2217}
+}

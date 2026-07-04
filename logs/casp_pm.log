@@ -1,0 +1,11 @@
+  [searched_nonrec_pm] lr=1e-03 seed0 -> 0.7786
+  [searched_nonrec_pm] lr=3e-04 seed0 -> 0.7752
+  [searched_nonrec_pm] lr=1e-03 seed1 -> 0.7806
+  [searched_nonrec_pm] lr=1e-03 seed2 -> 0.7797
+  [searched_nonrec_pm] lr=1e-03 seed3 -> 0.7744
+  [searched_nonrec_pm] lr=1e-03 seed4 -> 0.7754
+[done] searched_nonrec_pm: test=0.7777+-0.0024 params=1.46M lr=1e-03
+
+=== MATCHED-PROTOCOL CHESTMNIST BENCHMARK (test macro-AUC) ===
+model                  params(M)     test     std     val     lr
+searched_nonrec_pm          1.46   0.7777  0.0024  0.7782  1e-03

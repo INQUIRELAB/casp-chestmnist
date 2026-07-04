@@ -1,0 +1,19 @@
+  [searched_nonrec] lr=1e-03 seed0 -> 0.7311
+  [searched_nonrec] lr=3e-04 seed0 -> 0.7305
+  [searched_nonrec] lr=3e-04 seed1 -> 0.7264
+  [searched_nonrec] lr=3e-04 seed2 -> 0.7297
+  [searched_nonrec] lr=3e-04 seed3 -> 0.7311
+  [searched_nonrec] lr=3e-04 seed4 -> 0.7263
+[done] searched_nonrec: test=0.7288+-0.002 params=1.90M lr=3e-04
+  [searched_nonrec_pm] lr=1e-03 seed0 -> 0.7325
+  [searched_nonrec_pm] lr=3e-04 seed0 -> 0.7249
+  [searched_nonrec_pm] lr=1e-03 seed1 -> 0.737
+  [searched_nonrec_pm] lr=1e-03 seed2 -> 0.7291
+  [searched_nonrec_pm] lr=1e-03 seed3 -> 0.7339
+  [searched_nonrec_pm] lr=1e-03 seed4 -> 0.7344
+[done] searched_nonrec_pm: test=0.7334+-0.0026 params=1.46M lr=1e-03
+
+=== PATIENT-GROUPED NIH (28x28) EXTERNAL VALIDATION (test macro-AUC) ===
+model                  params(M)     test     std     val     lr
+searched_nonrec_pm          1.46   0.7334  0.0026  0.7800  1e-03
+searched_nonrec             1.90   0.7288  0.0020  0.7755  3e-04

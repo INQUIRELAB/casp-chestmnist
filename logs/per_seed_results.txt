@@ -1,0 +1,23 @@
+Per-seed test macro-AUC for all eight models under the matched protocol.
+Generated from bench_results.json (ChestMNIST) and bench_nih_results.json (NIH-28).
+Every model: LR selected on seed 0 from {1e-3,3e-4}, then 5 seeds at the selected LR.
+
+=== ChestMNIST (official test split, evaluated once) ===
+CASP           params= 1.90M lr=1e-03  mean=0.7826 std=0.0019  seeds=[0.7838, 0.7808, 0.7799, 0.7841, 0.7845]
+CASP-matched   params= 1.46M lr=1e-03  mean=0.7777 std=0.0024  seeds=[0.7786, 0.7806, 0.7797, 0.7744, 0.7754]
+DenseNet-121   params= 6.96M lr=1e-03  mean=0.7631 std=0.0043  seeds=[0.7597, 0.7708, 0.7615, 0.7646, 0.759]
+ResNet-18      params=11.17M lr=1e-03  mean=0.7545 std=0.0026  seeds=[0.7569, 0.7523, 0.7577, 0.7545, 0.7509]
+Recursive      params= 1.49M lr=1e-03  mean=0.7480 std=0.0015  seeds=[0.7485, 0.7465, 0.7497, 0.7495, 0.746]
+ResNet-50      params=23.53M lr=1e-03  mean=0.7454 std=0.0021  seeds=[0.7466, 0.7477, 0.7471, 0.7427, 0.7431]
+Compact ViT    params= 1.80M lr=1e-03  mean=0.7231 std=0.0036  seeds=[0.7243, 0.7185, 0.7287, 0.7198, 0.7241]
+MobileNetV2    params= 2.24M lr=1e-03  mean=0.7167 std=0.0041  seeds=[0.7109, 0.7226, 0.7191, 0.7173, 0.7138]
+
+=== NIH ChestX-ray14, patient-grouped, 28x28 (patient-disjoint test) ===
+CASP-matched   lr=1e-03  mean=0.7334 std=0.0026  seeds=[0.7325, 0.737, 0.7291, 0.7339, 0.7344]
+CASP           lr=3e-04  mean=0.7288 std=0.0020  seeds=[0.7305, 0.7264, 0.7297, 0.7311, 0.7263]
+DenseNet-121   lr=1e-03  mean=0.7158 std=0.0074  seeds=[0.7025, 0.7151, 0.7249, 0.7198, 0.7168]
+ResNet-18      lr=1e-03  mean=0.7039 std=0.0058  seeds=[0.7007, 0.712, 0.6985, 0.7097, 0.6984]
+Recursive      lr=3e-04  mean=0.6914 std=0.0048  seeds=[0.6965, 0.6885, 0.6884, 0.6858, 0.6976]
+ResNet-50      lr=1e-03  mean=0.6913 std=0.0017  seeds=[0.6891, 0.6905, 0.6943, 0.6913, 0.6915]
+Compact ViT    lr=1e-03  mean=0.6731 std=0.0015  seeds=[0.6755, 0.6725, 0.6734, 0.6733, 0.6709]
+MobileNetV2    lr=1e-03  mean=0.6684 std=0.0041  seeds=[0.6754, 0.6668, 0.6703, 0.6662, 0.6635]

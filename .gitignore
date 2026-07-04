@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+data/
+nihdata/
+*.pth
+*.pt
+.DS_Store

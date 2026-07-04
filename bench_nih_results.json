@@ -1,0 +1,138 @@
+{
+  "searched_nonrec": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.0003,
+    "params": 1896566,
+    "test_mean": 0.7288,
+    "test_std": 0.002,
+    "val_mean": 0.7755,
+    "test_seeds": [
+      0.7305,
+      0.7264,
+      0.7297,
+      0.7311,
+      0.7263
+    ],
+    "n_ok": 5
+  },
+  "searched_rec": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.0003,
+    "params": 1486766,
+    "test_mean": 0.6914,
+    "test_std": 0.0048,
+    "val_mean": 0.742,
+    "test_seeds": [
+      0.6965,
+      0.6885,
+      0.6884,
+      0.6858,
+      0.6976
+    ],
+    "n_ok": 5
+  },
+  "searched_nonrec_pm": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1457897,
+    "test_mean": 0.7334,
+    "test_std": 0.0026,
+    "val_mean": 0.78,
+    "test_seeds": [
+      0.7325,
+      0.737,
+      0.7291,
+      0.7339,
+      0.7344
+    ],
+    "n_ok": 5
+  },
+  "resnet18": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 11174862,
+    "test_mean": 0.7039,
+    "test_std": 0.0058,
+    "val_mean": 0.7555,
+    "test_seeds": [
+      0.7007,
+      0.712,
+      0.6985,
+      0.7097,
+      0.6984
+    ],
+    "n_ok": 5
+  },
+  "resnet50": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 23527886,
+    "test_mean": 0.6913,
+    "test_std": 0.0017,
+    "val_mean": 0.7459,
+    "test_seeds": [
+      0.6891,
+      0.6905,
+      0.6943,
+      0.6913,
+      0.6915
+    ],
+    "n_ok": 5
+  },
+  "densenet121": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 6959374,
+    "test_mean": 0.7158,
+    "test_std": 0.0074,
+    "val_mean": 0.7628,
+    "test_seeds": [
+      0.7025,
+      0.7151,
+      0.7249,
+      0.7198,
+      0.7168
+    ],
+    "n_ok": 5
+  },
+  "mobilenet_v2": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 2241230,
+    "test_mean": 0.6684,
+    "test_std": 0.0041,
+    "val_mean": 0.718,
+    "test_seeds": [
+      0.6754,
+      0.6668,
+      0.6703,
+      0.6662,
+      0.6635
+    ],
+    "n_ok": 5
+  },
+  "vit_small": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1795598,
+    "test_mean": 0.6731,
+    "test_std": 0.0015,
+    "val_mean": 0.7222,
+    "test_seeds": [
+      0.6755,
+      0.6725,
+      0.6734,
+      0.6733,
+      0.6709
+    ],
+    "n_ok": 5
+  }
+}
