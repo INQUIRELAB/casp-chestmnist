@@ -147,7 +147,7 @@ for i, m in enumerate(ORDER):
                 if abs(b_lab[i] - b) > 1e-4 else None)
 ax.set_xticks([x0, x1]); ax.set_xticklabels(["ChestMNIST\n(MedMNIST split)", "NIH ChestX-ray14\n(patient-grouped)"])
 ax.set_xlim(-0.52, 1.42); ax.set_ylabel("test macro-AUC")
-ax.set_title("External validation on patient-grouped NIH", fontweight="bold", loc="left", pad=8)
+ax.set_title("Patient-disjoint validation on NIH", fontweight="bold", loc="left", pad=8)
 ax.grid(axis="x", visible=False)
 save(fig, "fig_ranking_preserved")
 
@@ -176,7 +176,7 @@ ax.set_xticks([0.0, 0.02, 0.04])
 ax.set_xlabel("$\\Delta$ macro-AUC (patient-clustered 95% CI)")
 # suptitle lives in FIGURE space (constrained_layout reserves room for it), so a
 # wide left y-label column cannot push it off-frame like an axes-left title.
-fig.suptitle("Paired differences on patient-grouped NIH ($B = 2000$)",
+fig.suptitle("Paired differences on patient-disjoint NIH ($B = 2000$)",
              fontweight="bold", fontsize=8.5, x=0.012, ha="left")
 ax.grid(axis="y", visible=False)
 save(fig, "fig_forest")
@@ -271,7 +271,7 @@ ax.set_yticks(yy); ax.set_yticklabels([f"{LABELS[c]}  ({prev[c]*100:.1f}%)" for 
 ax.set_ylim(-0.6, 14.0)
 ax.set_xlim(0.45, 0.92); ax.set_xlabel("per-label test AUC (patient-clustered 95% CI)")
 # suptitle in FIGURE space so the wide left label column can't push it off-frame
-fig.suptitle("CASP per-label AUC on patient-grouped NIH", fontweight="bold",
+fig.suptitle("CASP per-label AUC on patient-disjoint NIH", fontweight="bold",
              fontsize=8.5, x=0.012, ha="left")
 ax.grid(axis="y", visible=False)
 save(fig, "fig_perlabel")
