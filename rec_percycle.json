@@ -1,0 +1,37 @@
+{
+  "seed": 0,
+  "lr": 0.001,
+  "steps": 4000,
+  "params": 1486766,
+  "final_test_auc": 0.7451,
+  "val_auc": 0.7537,
+  "n_test": 22433,
+  "h_cycles": 4,
+  "l_cycles": 2,
+  "rows": [
+    {
+      "cycle": 1,
+      "macro_auc": 0.7398,
+      "mean_state_change_l2": null,
+      "mean_cosine_to_prev": null
+    },
+    {
+      "cycle": 2,
+      "macro_auc": 0.7438,
+      "mean_state_change_l2": 2.8437,
+      "mean_cosine_to_prev": 0.9805
+    },
+    {
+      "cycle": 3,
+      "macro_auc": 0.7449,
+      "mean_state_change_l2": 1.9774,
+      "mean_cosine_to_prev": 0.9907
+    },
+    {
+      "cycle": 4,
+      "macro_auc": 0.7451,
+      "mean_state_change_l2": 1.3941,
+      "mean_cosine_to_prev": 0.9954
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "casp_no_local": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1797830,
+    "test_mean": 0.7815,
+    "test_std": 0.0027,
+    "val_mean": 0.7817,
+    "test_seeds": [
+      0.7786,
+      0.7851,
+      0.7808
+    ],
+    "n_ok": 3
+  },
+  "casp_mean_pool": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1877366,
+    "test_mean": 0.7737,
+    "test_std": 0.0021,
+    "val_mean": 0.7763,
+    "test_seeds": [
+      0.7763,
+      0.7737,
+      0.7711
+    ],
+    "n_ok": 3
+  },
+  "casp_no_se": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1847006,
+    "test_mean": 0.7809,
+    "test_std": 0.0009,
+    "val_mean": 0.7815,
+    "test_seeds": [
+      0.7807,
+      0.7799,
+      0.7821
+    ],
+    "n_ok": 3
+  },
+  "casp_std_down": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1988726,
+    "test_mean": 0.7795,
+    "test_std": 0.0034,
+    "val_mean": 0.7809,
+    "test_seeds": [
+      0.7804,
+      0.7749,
+      0.7831
+    ],
+    "n_ok": 3
+  },
+  "casp_no_ws": {
+    "done": true,
+    "ok": true,
+    "best_lr": 0.001,
+    "params": 1896566,
+    "test_mean": 0.7716,
+    "test_std": 0.0013,
+    "val_mean": 0.7721,
+    "test_seeds": [
+      0.7698,
+      0.7729,
+      0.7721
+    ],
+    "n_ok": 3
+  }
+}
