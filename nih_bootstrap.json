@@ -20,16 +20,16 @@
       "auc": 0.7158,
       "ci_lo": 0.7078,
       "ci_hi": 0.7238,
-      "seed_sd": 0.0074
+      "seed_sd": 0.0075
     },
     "resnet18": {
       "auc": 0.7039,
-      "ci_lo": 0.6957,
-      "ci_hi": 0.7123,
+      "ci_lo": 0.6958,
+      "ci_hi": 0.7122,
       "seed_sd": 0.0058
     },
     "searched_rec": {
-      "auc": 0.6913,
+      "auc": 0.6914,
       "ci_lo": 0.6833,
       "ci_hi": 0.6994,
       "seed_sd": 0.0048
@@ -41,7 +41,7 @@
       "seed_sd": 0.0017
     },
     "vit_small": {
-      "auc": 0.6732,
+      "auc": 0.6731,
       "ci_lo": 0.6645,
       "ci_hi": 0.6817,
       "seed_sd": 0.0015
@@ -49,7 +49,7 @@
     "mobilenet_v2": {
       "auc": 0.6684,
       "ci_lo": 0.6603,
-      "ci_hi": 0.6765,
+      "ci_hi": 0.6766,
       "seed_sd": 0.0041
     }
   },
@@ -81,7 +81,7 @@
     "searched_nonrec__vs__searched_nonrec_pm": {
       "delta": -0.0046,
       "ci_lo": -0.007,
-      "ci_hi": -0.0023,
+      "ci_hi": -0.0024,
       "p": 0.0005
     }
   }

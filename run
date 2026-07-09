@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# =============================================================================
+# Code Ocean reproducible run.
+# Regenerates EVERY number and figure reported in the manuscript, deterministically,
+# from the saved per-seed model outputs (nih_probs/) and result JSONs. No GPU and
+# no dataset download are needed for this reproducible run; it uses only numpy /
+# scikit-learn / matplotlib on the fixed saved arrays with fixed RNG seeds, so it
+# yields byte-identical numbers on any machine.
+#
+# (The model-training scripts bench_chestmnist.py / bench_nih.py that PRODUCED the
+#  saved outputs are included for transparency but are NOT part of this run: GPU
+#  training is hardware-dependent and not bitwise-reproducible across machines.)
+# =============================================================================
+set -e
+cd "$(dirname "$0")"
+
+# Resolve the results directory (Code Ocean mounts /results; fall back for local runs)
+if [ -d /results ]; then RES=/results
+elif [ -d ../results ]; then RES=../results
+else RES=./results; mkdir -p "$RES"; fi
+echo "Results -> $RES"
+
+echo "== [1/3] Reproducing all reported numbers (tables, patient-clustered bootstrap CIs,"
+echo "         calibration/AP/Brier, ablation, per-cycle diagnostic) — deterministic =="
+python reproduce_paper.py "$RES"
+
+echo "== [2/3] Regenerating the six statistical figures =="
+python plots.py && cp -f figures/*.pdf figures/*.png "$RES"/ 2>/dev/null || true
+
+echo "== [3/3] Forward MACs (deterministic) + latency (hardware-dependent, informational) =="
+python flops.py > "$RES/flops_latency_reproduced.txt" 2>&1 \
+  && echo "   wrote $RES/flops_latency_reproduced.txt" \
+  || echo "   (flops.py needs torch; the paper's MACs are also in flops_latency.json)"
+
+echo "== DONE. All reproduced numbers are in $RES/reproduced_paper_numbers.txt =="

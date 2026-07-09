@@ -63,5 +63,6 @@ for name, bf in MODELS.items():
     l256 = latency(bf(14, 1), 256)
     out[name] = dict(params=p, mmac=round(f, 2), lat_b1_ms=round(l1, 4), lat_b256_ms=round(l256, 4))
     print(f"{name:22s} {p/1e6:>10.3f} {f:>10.1f} {l1:>11.3f} {l256:>13.2f}", flush=True)
-Path(HERE / "flops_latency.json").write_text(json.dumps(out, indent=2))
-print("WROTE flops_latency.json", flush=True)
+Path(HERE / "flops_latency_measured.json").write_text(json.dumps(out, indent=2))
+print("WROTE flops_latency_measured.json (the paper's reference values are in "
+      "flops_latency.json; MACs reproduce exactly, latency is hardware-dependent)", flush=True)

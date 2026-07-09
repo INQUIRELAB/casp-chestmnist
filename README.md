@@ -1,5 +1,3 @@
-![CASP](assets/banner.png)
-
 # CASP — A Compact Convolutional-Attention Classifier for Chest Radiographs
 
 **Does recursion help compact chest-radiograph classifiers?**

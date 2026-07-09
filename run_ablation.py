@@ -80,8 +80,11 @@ def main():
         print(f"[done] {name}: test={results[name]['test_mean']}+-{results[name]['test_std']} "
               f"params={ok[0]['params']/1e6:.2f}M lr={best_lr:.0e}", flush=True)
 
-    # Reference row (full CASP) reused from the known 5-seed result, not re-run.
-    ref = dict(params=1896566, test_mean=0.7826, test_std=0.0019, n_seeds=5, reused=True)
+    # Reference row: full CASP on the SAME 3 seeds (0,1,2) as the ablations, so every
+    # delta is like-for-like. Seeds 0,1,2 of the 5-seed run were [0.7838, 0.7808, 0.7799]
+    # (mean 0.7815, std 0.0017); the 5-seed mean is 0.7826 and is reported in the main table.
+    ref = dict(params=1896566, test_mean=0.7815, test_std=0.0017, n_seeds=3,
+               seeds=[0.7838, 0.7808, 0.7799], reused=True)
     print("\n=== CASP ABLATION (ChestMNIST test macro-AUC, matched protocol) ===", flush=True)
     print(f"{'variant':16s} {'params(M)':>9s} {'test':>8s} {'std':>7s} {'delta_vs_full':>13s}",
           flush=True)
