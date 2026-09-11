@@ -81,7 +81,7 @@ Each script is deterministic given the fixed seeds, so the committed `*_results.
 
 ## License
 
-Released under the MIT License (see `LICENSE`).
+This repository is released under the **INQUIRE Lab Academic Research License** (see `LICENSE`). Non-commercial academic use only. Commercial use, redistribution, and derivative works require prior written permission, and no patent rights are granted.
 
 ## Citation
 
